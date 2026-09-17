@@ -1,192 +1,134 @@
 ````markdown
-# Supply Chain Intelligence Dashboard
+# Supply Chain Analytics & Planning Model
 
 ## Overview
 
-Supply Chain Intelligence Dashboard is an analytics project that combines data preparation, SQL analysis, Python-based exploration, and Power BI visualization.
+This project is an Excel-based supply chain analysis model designed to convert operational data into useful planning and performance insights.
 
-The project focuses on understanding how inventory, suppliers, transportation, product quality, and profitability affect supply chain performance.
+The model combines order, shipment, inventory, and supplier information to evaluate fulfillment performance, inventory health, and future stock requirements.
 
-## Objectives
+## Project Objectives
 
-The main objectives are to:
+- Monitor order fulfillment performance
+- Analyze inventory levels and value
+- Identify important SKUs
+- Support inventory replenishment decisions
+- Calculate optimal order quantities
+- Evaluate supplier performance
+- Understand demand patterns
+- Support operational decision-making
 
-- Analyze inventory performance
-- Evaluate supplier reliability
-- Understand logistics costs
-- Measure shipping efficiency
-- Analyze product quality
-- Study revenue and profitability
-- Generate actionable operational insights
+## Analysis Areas
 
-## Project Workflow
+### Order Fulfillment
+
+The model evaluates order execution using indicators such as:
+
+- On-Time Delivery
+- In-Full Delivery
+- OTIF
+- Perfect Order Performance
+- Fulfillment Lead Time
+
+### Inventory Analysis
+
+Inventory data is used to calculate and analyze:
+
+- Inventory value
+- Inventory turnover
+- Days of inventory
+- Product-level stock position
+- Annual demand
+
+### ABC Classification
+
+Products are categorized according to their contribution to overall revenue.
+
+This helps identify high-value products that require closer monitoring and lower-priority products that can use simpler inventory controls.
+
+### Reorder Planning
+
+The model supports calculations for:
+
+- Safety Stock
+- Reorder Point
+- Economic Order Quantity
+- Current stock status
+
+These calculations help determine when replenishment may be required and the approximate quantity to order.
+
+### Demand Forecasting
+
+Historical demand is analyzed using moving-average techniques to estimate future demand.
+
+Forecast performance can also be evaluated using percentage-based error calculations.
+
+## Workflow
 
 ```text
-Raw Dataset
-     ↓
-Data Cleaning
-     ↓
-Exploratory Data Analysis
-     ↓
-SQL Analysis
-     ↓
-KPI Development
-     ↓
-Power BI Visualization
-     ↓
-Operational Insights
+Raw Operational Data
+        ↓
+Data Organization
+        ↓
+KPI Calculation
+        ↓
+Inventory Analysis
+        ↓
+ABC Classification
+        ↓
+EOQ & Reorder Planning
+        ↓
+Demand Forecasting
+        ↓
+Business Insights
 ````
 
-## Analysis Modules
+## Tools Used
 
-### Inventory Performance
+* Microsoft Excel
+* Excel Formulas
+* Pivot Tables
+* Inventory Analysis
+* Supply Chain KPIs
+* Statistical Calculations
 
-The dashboard analyzes stock levels and product availability to understand inventory distribution and identify important inventory trends.
+## Business Questions
 
-### Supplier Analysis
+The model helps answer questions such as:
 
-Supplier performance is evaluated using indicators such as:
-
-* Production volume
-* Quality performance
-* Defect rate
-* Supplier contribution
-* Operational consistency
-
-### Logistics Analysis
-
-Transportation and shipment information is analyzed using:
-
-* Shipping cost
-* Transportation method
-* Delivery duration
-* Lead time
-* Logistics efficiency
-
-### Product Performance
-
-Products are compared using:
-
-* Revenue
-* Inventory levels
-* Sales contribution
-* Profitability
-* Defect performance
-
-## Dashboard Sections
-
-### Executive Overview
-
-Provides a high-level view of major supply chain KPIs.
-
-### Inventory & Supplier Analysis
-
-Focuses on inventory position, supplier contribution, quality, and defect-related metrics.
-
-### Logistics & Profitability
-
-Combines transportation analysis with shipping performance, revenue, and profitability indicators.
-
-### Business Insights
-
-Summarizes observations from the analysis and identifies areas where operational improvements can be considered.
-
-## Technology Stack
-
-### Python
-
-Used for:
-
-* Data cleaning
-* Data preparation
-* Exploratory data analysis
-* Visualization
-
-### SQL
-
-Used for:
-
-* Data querying
-* Aggregation
-* KPI calculations
-* Comparative analysis
-
-### Power BI
-
-Used for:
-
-* Interactive dashboards
-* KPI visualization
-* Trend analysis
-* Business reporting
-
-### Excel
-
-Used for supporting data handling and analysis.
-
-## Key KPIs
-
-The project analyzes indicators related to:
-
-* Inventory levels
-* Supplier performance
-* Defect rates
-* Shipping costs
-* Lead time
-* Transportation performance
-* Revenue
-* Profit margin
+* How efficiently are customer orders being fulfilled?
+* Which products require tighter inventory control?
+* Which items may need replenishment?
+* How much stock should be maintained?
+* What are the major inventory trends?
+* How are suppliers performing?
+* What demand can be expected in upcoming periods?
 
 ## Skills Demonstrated
 
-* Data Cleaning
-* Exploratory Data Analysis
-* SQL
-* Python
-* Power BI
-* KPI Development
-* Data Visualization
 * Supply Chain Analytics
-* Business Intelligence
-* Operational Analysis
+* Inventory Management
+* KPI Analysis
+* ABC Analysis
+* EOQ Calculation
+* Reorder Point Planning
+* Demand Forecasting
+* Excel Data Analysis
+* Business Problem Solving
 
-## Project Structure
+## Future Improvements
 
-```text
-Supply-Chain-Analytics-Dashboard/
-│
-├── Dataset/
-│   ├── Raw Data
-│   └── Clean Data
-│
-├── Python/
-│   ├── Data Cleaning
-│   └── Exploratory Analysis
-│
-├── SQL/
-│   └── Analysis Queries
-│
-├── Power BI/
-│   └── Dashboard
-│
-├── Dashboard Screenshots/
-│
-└── README.md
-```
-
-## Future Enhancements
-
-* Automated data pipelines
-* Real-time KPI monitoring
-* Predictive demand analysis
-* Supplier risk scoring
-* Inventory optimization
-* Automated operational alerts
-* Warehouse management system integration
+* Automated data refresh
+* Power BI dashboard integration
+* SQL-based data storage
+* Supplier scorecards
+* Advanced forecasting models
+* Inventory alerts
+* Scenario-based cost analysis
 
 ## Conclusion
 
-This project demonstrates how supply chain data can be transformed into business intelligence using Python, SQL, and Power BI to support inventory monitoring, supplier evaluation, logistics analysis, and data-driven decision-making.
+This project demonstrates how operational data can be transformed into practical supply chain insights for inventory planning, fulfillment monitoring, and operational decision-making.
 
 ```
 ```
